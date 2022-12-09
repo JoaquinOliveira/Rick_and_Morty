@@ -27,7 +27,7 @@ export default function Detail() {
 return (
     <div className={styles.container}>
         <img src={character.image} alt={character.name}/>
-        <h1>Nombre: {character.name}</h1>
+        <h1>Name: {character.name}</h1>
         <h2>Status: {character.status}</h2>
         <h2>Specie: {character.species}</h2>
         <h2>Gender: {character.gender}</h2>

@@ -68,7 +68,7 @@ function onSearch(character) {
 };
 
 return (
-  <div className="App" style={{ padding: "25px" }}>
+  <div className={"App"} style={{ padding: "25px" }}>
     {location.pathname !== '/' && <Nav logOut={logOut} onSearch={onSearch} />} {/* puedo hacer un ternario */}
     <Routes>
       <Route path='/' element={<Form login={login} />} />

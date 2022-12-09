@@ -6,6 +6,11 @@
 
 
 .front, .container .back {
+  text-align: center;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  display: flex;
   margin-top: 200px;
   border: 1px solid rgb(61, 61, 61);
   background-color: grey;
@@ -26,22 +31,22 @@
 
   .buttonContainer {
     display: flex;
-    justify-content: center;
+    justify-content: space-between;
     transform: none;
   }
 
   .buttonContainer button {
     background-color: rgb(37, 37, 37);
     color: white;
-    margin: 3px 3px 7px 0;
     border-radius: 3px;
     border: none;
-    cursor: pointer
+    cursor: pointer;
+   
   }
 
   .buttonContainer button:hover {
-    background-color: whitesmoke;
-    color: black
+    background-color: red;
+    color: white
   }
 
   .cardName {
