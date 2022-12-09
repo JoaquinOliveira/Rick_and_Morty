@@ -1,0 +1,58 @@
+@font-face {
+    font-family: rick_and_morty;
+    src: url("/src/assets/get_schwifty.ttf");}
+
+.container {
+    width: 80%;
+    margin: auto;
+    padding: 35px 0;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 9999;
+}
+
+
+.container ul li {
+    list-style: none;
+    display: inline-block;
+    margin: 0 20px;
+}
+
+.container ul li a {
+    text-decoration: none;
+    color: white;
+    font-family: rick_and_morty;
+    font-size: 1.2rem;
+}
+/*
+.container ul li::before {
+    content: '';
+    height: 3px;
+    width: 0px;
+    background: blue;
+    position: absolute;
+    left: 0;
+    bottom: -12px;
+    transition: 0.4s ease-out;
+}
+
+.container ul li:hover::before {
+    width: 100px;
+} no funcionó como quería */ 
+
+.container button {
+    height: 33px;
+    background-color: rgba(0, 0, 130, 0.948);
+    border-radius: 5px;
+    color: white;
+    cursor: pointer;
+    justify-content: space-evenly ;
+}
+
+.container img {
+    height: 100px;
+}

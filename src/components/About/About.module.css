@@ -1,0 +1,60 @@
+@font-face {
+  font-family: rick_and_morty;
+  src: url("/src/assets/get_schwifty.ttf");
+  /*url('../../src/image.jpeg') acá podes poner una font que sacaste y descargaste de algun lado.*/
+}
+
+.front,
+.container .back {
+  margin-top: 150px;
+  margin-left: 400px;
+  border: 1px solid rgb(61, 61, 61);
+  background-color: grey;
+  border-radius: 10px;
+  width: 300px;
+  padding: 10px;
+  font-family: rick_and_morty;
+  font-size: smaller;
+  box-shadow: 0 0 15px black;
+  justify-content: center;
+  align-content: center;
+}
+
+.image {
+  width: 90%;
+  border: 1px solid rgb(61, 61, 61);
+  border-radius: 10px;
+}
+
+.front,
+.back {
+  backface-visibility: hidden;
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+.front {
+  z-index: 2;
+  transition: all 1s linear;
+}
+.back {
+  transition: all 1s linear;
+  transform: rotateY(180deg);
+}
+.container {
+  transform-style: preserve-3d;
+  perspective: 500px;
+
+}
+
+.container:hover .front {
+  transform: rotateY(180deg);
+
+}
+.container:hover .back {
+  transform: rotateY(360deg);
+
+}
+.h2 {
+  color: black;
+}

@@ -1,0 +1,82 @@
+@font-face {
+  font-family: rick_and_morty;
+  src: url("/src/assets/get_schwifty.ttf");
+  /*url('../../src/image.jpeg') acá podes poner una font que sacaste y descargaste de algun lado.*/
+}
+
+
+.front, .container .back {
+  margin-top: 200px;
+  border: 1px solid rgb(61, 61, 61);
+  background-color: grey;
+  border-radius: 10px;
+  width: 180px;
+  padding: 10px;
+  font-family: rick_and_morty;
+  font-size: smaller;
+  box-shadow: 0 0 15px black;
+
+}
+
+  .image {
+    width: 90%;
+    border: 1px solid rgb(61, 61, 61);
+    border-radius: 10px;
+  }
+
+  .buttonContainer {
+    display: flex;
+    justify-content: center;
+    transform: none;
+  }
+
+  .buttonContainer button {
+    background-color: rgb(37, 37, 37);
+    color: white;
+    margin: 3px 3px 7px 0;
+    border-radius: 3px;
+    border: none;
+    cursor: pointer
+  }
+
+  .buttonContainer button:hover {
+    background-color: whitesmoke;
+    color: black
+  }
+
+  .cardName {
+    text-decoration: none;
+    color: black;
+    display: flex;
+    justify-content: space-around;
+  }
+  
+
+.front, .back {
+  backface-visibility: hidden;
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+.front {
+  z-index: 2;
+  transition: all 1s linear;
+}
+.back {
+  transition: all 1s linear;
+  transform: rotateY(180deg);
+
+}
+.container {
+  transform-style: preserve-3d;
+  perspective: 500px;
+}
+.container:hover .front {
+  transform: rotateY(180deg);
+  cursor: pointer;
+}
+.container:hover .back {
+  transform: rotateY(360deg);
+  cursor: pointer;
+
+}

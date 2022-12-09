@@ -1,0 +1,15 @@
+.container input {
+    border-radius: 5px;
+    height: 25px;
+    margin: 10px 10px 10px 10px;
+}
+
+.container button {
+    height: 33px;
+    background-color: rgba(0, 0, 130, 0.948);
+    border-radius: 5px;
+    color: white;
+    cursor: pointer;
+    align-items: flex-end;
+    justify-content: space-evenly;
+}

@@ -1,0 +1,36 @@
+.container {
+    display: flex;
+    margin: auto;
+    width: 70%;
+    justify-content: center;
+}
+
+.container input {
+    border-radius: 5px;
+    height: 30px;
+    width: 170px;
+}
+
+.container button {
+    height: 30px;
+    background-color: rgba(0, 0, 130, 0.948);
+    border-radius: 5px;
+    color: white;
+    cursor: pointer;
+}
+
+
+.warning {
+    border: solid red 1px;
+    border-radius: 0.2em;
+  }
+  
+  .danger {
+    font-size: 10px;
+    color: red;
+    margin-left: 10em;
+  }
+  
+  .container label {
+    color: whitesmoke
+  }
