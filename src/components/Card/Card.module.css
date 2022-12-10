@@ -8,7 +8,7 @@
 .front, .container .back {
   text-align: center;
   flex-direction: column;
-  justify-content: center;
+  justify-content: space-between;
   align-items: center;
   display: flex;
   margin-top: 200px;

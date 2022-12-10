@@ -9,9 +9,21 @@ export function addFavorites(id) {
 }
 
 export function deleteFavorites(id) {
-        return {
-            type: DELETE_FAVORITES,
-            payload: id
-        }
+    return {
+        type: DELETE_FAVORITES,
+        payload: id
+    }
 }
 
+export function characterFilter(gender) {
+    return {
+        type: 'FILTER',
+        paylod: gender}
+}
+
+export function orderCards(order) {
+    return {
+        type: 'ORDER',
+        payload: order,
+    }
+}
